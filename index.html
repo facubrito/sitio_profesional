@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo Brito | Administrador de Empresas - Finanzas y Tecnología</title>
+    <link href="https://www.linkedin.com/in/facundo-brito-2687131b7/" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Facundo Brito</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#intereses">Intereses</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h1>Bienvenido a conocerme</h1>
+                <h2>Facundo Brito</h2>
+                <p class="bio">
+                    Soy Facundo, estudiante de Administración de Empresas con experiencia en planeamiento estratégico y consultoría de negocios. Mi día a día transcurre entre el análisis financiero, la gestión presupuestaria y la búsqueda constante de optimización organizacional. Paralelamente, me encuentro en una etapa de formación técnica en desarrollo web y diseño, combinando la lógica de los negocios con el mundo digital para crear soluciones eficientes y funcionales.
+                </p>
+                <a href="https://www.linkedin.com/in/facundo-brito-2687131b7/" target="_blank" class="cta-button">Conocerme en LinkedIn</a>
+            </div>
+            <div class="hero-image">
+                <img src="foto1.jpg" alt="Foto de Facundo" class="profile-photo">
+            </div>
+        </section>
+
+        <section id="intereses" class="interests-section">
+            <h2>Mis Intereses y Conocimientos</h2>
+            
+            <div class="interest-image">
+                <img src="Foto2.png" alt="Foto relacionada a intereses" class="interest-photo">
+            </div>
+
+            <div class="interests-wrapper">
+                <div class="interest-buttons" role="tablist" aria-label="Intereses">
+                    <button class="interest-button active" data-target="adm">Administración</button>
+                    <button class="interest-button" data-target="fin">Finanzas, Gestión y Estrategia</button>
+                    <button class="interest-button" data-target="tec">Tecnología</button>
+                    <button class="interest-button" data-target="gust">Gustos Personales</button>
+                </div>
+
+                <div class="interests-content">
+                    <div id="adm" class="interest-panel active">
+                        <h3>Administración</h3>
+                        <p>Mi base académica y profesional. Me especializo en el análisis y la toma de decisiones estratégicas. Cuento con experiencia en la elaboración de presupuestos (gastos y headcount) y en la gestión de cierres financieros, siempre con una visión orientada a resultados para operaciones en Argentina y Uruguay.</p>
+                    </div>
+
+                    <div id="fin" class="interest-panel">
+                        <h3>Finanzas, Gestión y Estrategia</h3>
+                        <p>Me apasiona la planificación a largo plazo. Utilizo metodologías probadas para diagnosticar situaciones de mercado, identificar oportunidades de crecimiento y diseñar planes de negocio sólidos que aporten valor real a la organización.</p>
+                    </div>
+
+                    <div id="tec" class="interest-panel">
+                        <h3>Tecnología</h3>
+                        <p>Entiendo la tecnología como un pilar fundamental para la modernización de los negocios. Estoy en constante formación técnica para construir herramientas digitales eficientes. Mi stack principal incluye HTML, CSS y JavaScript. Complemento este trabajo utilizando Figma para el prototipado previo y GitHub para el versionado de mis proyectos.</p>
+                    </div>
+
+                    <div id="gust" class="interest-panel">
+                        <h3>Gustos Personales</h3>
+                        <p>Creo firmemente en que el rendimiento profesional está ligado al bienestar físico y mental. Por eso, el Gym y el Fútbol son parte esencial de mi rutina. Estas actividades refuerzan mi disciplina, el trabajo en equipo y la capacidad de superación constante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Hablemos</h3>
+                    <p><strong>Email:</strong> fakubrito@email.com</p>
+                    <p><strong>Teléfono:</strong> 11-5664-9339</p>
+                    <p><strong>Ubicación:</strong> Buenos Aires, Argentina</p>
+                </div>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar Mensaje</button>
+                    <p id="formStatus" class="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Facundo Brito. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
